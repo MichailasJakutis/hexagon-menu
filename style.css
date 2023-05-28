@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace
+}
+.container-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #161623;
+}
+.container{
+    width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container .hexagonArea{
+    display: flex;
+}
+.container .hexagonArea.last{
+    transform: translateY(-45px);
+}
+.container .hexagonArea .hexagon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 0 10px;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    background-color: deeppink;
+    cursor: pointer;
+    transition: .5s;
+}
+.container .hexagonArea .hexagon img{
+    width: 80px;
+}
+.container .hexagonArea .hexagon h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.container .hexagonArea .hexagon:hover{
+    background-color: deepskyblue;
+    transform: scale(0.8);
+}
