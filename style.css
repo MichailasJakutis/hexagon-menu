@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    
     background-color: #161623;
 }
 .container{
@@ -22,8 +22,12 @@
 .container .hexagonArea{
     display: flex;
 }
+.container .hexagonArea a{
+    text-decoration: none;
+    color: #161623;
+}
 .container .hexagonArea.last{
-    transform: translateY(-45px);
+    transform: translateY(-30px);
 }
 .container .hexagonArea .hexagon{
     display: flex;
@@ -31,16 +35,16 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    width: 200px;
-    height: 250px;
-    margin: 0 10px;
+    width: 150px;
+    height: 150px;
+    margin: 0 5px;
     clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
     background-color: deeppink;
     cursor: pointer;
     transition: .5s;
 }
 .container .hexagonArea .hexagon img{
-    width: 80px;
+    width: 50px;
 }
 .container .hexagonArea .hexagon h3{
     text-transform: uppercase;
